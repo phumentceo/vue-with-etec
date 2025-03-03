@@ -9,7 +9,6 @@
 
    defineProps(['message','about']);
 
-  
 
 </script>
 
