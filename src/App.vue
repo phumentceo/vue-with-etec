@@ -1,4 +1,5 @@
 <script setup>
+import NamedSloteParent from './components/2-Advance-Concept/3-DynamicProps/Slots/2-Name_stots/NamedSloteParent.vue';
 // import Child from './components/2-Advance-Concept/1-PropsDrilling/2-Emit/Child.vue';
 // import Cart from './components/2-Advance-Concept/1-PropsDrilling/2-Emit/Cart/Cart.vue';
 // import Parent from './components/2-Advance-Concept/1-PropsDrilling/2-Emit/Parent.vue';
@@ -11,8 +12,7 @@
 // import Demo2 from "./components/1-Basic/3-Computed/Demo2.vue";
 // import Demo3 from "./components/1-Basic/3-Computed/Demo3.vue";
 // import Parent from "./components/2-Advance-Concept/1-PropsDrilling/1-Props/Parent.vue"
-
-  import Parent from './components/2-Advance-Concept/3-DynamicProps/Slots/1-Defualt_stots/Parent.vue';
+  // import Parent from './components/2-Advance-Concept/3-DynamicProps/Slots/1-Defualt_stots/Parent.vue';
 </script>
 
 <template>
@@ -27,6 +27,8 @@
   <!-- <Child/> -->
   <!-- <Parent/> -->
   <!-- <Cart/> -->
-   <Parent/>
+   <!-- <Parent/> -->
+    
+  <NamedSloteParent/>
   
 </template>
