@@ -1,7 +1,9 @@
 <script setup>
+import Layout from './components/2-Advance-Concept/4-Router/slote-router/components/Layout.vue';
+
 // import NamedSloteParent from './components/2-Advance-Concept/3-DynamicProps/Slots/2-Name_stots/NamedSloteParent.vue';
-import Footer from './components/2-Advance-Concept/4-Router/components/Footer.vue';
-import Header from './components/2-Advance-Concept/4-Router/components/Header.vue';
+// import Footer from './components/2-Advance-Concept/4-Router/components/Footer.vue';
+// import Header from './components/2-Advance-Concept/4-Router/components/Header.vue';
 // import Child from './components/2-Advance-Concept/1-PropsDrilling/2-Emit/Child.vue';
 // import Cart from './components/2-Advance-Concept/1-PropsDrilling/2-Emit/Cart/Cart.vue';
 // import Parent from './components/2-Advance-Concept/1-PropsDrilling/2-Emit/Parent.vue';
@@ -32,7 +34,20 @@ import Header from './components/2-Advance-Concept/4-Router/components/Header.vu
   <!-- <Parent/> -->
   <!-- <NamedSloteParent/> -->
 
-  <Header />
+  <!-- <Header />
     <router-view />
-  <Footer />
+  <Footer /> -->
+  <Layout>
+    <template #header>
+      <nav>
+        <router-link to="/">Home</router-link> |
+        <router-link to="/detail">Detail</router-link>
+      </nav>
+    </template>
+
+    <template #footer>
+      <p>&copy; 2025 My App</p>
+    </template>
+  </Layout>
+
 </template>
