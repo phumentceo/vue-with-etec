@@ -38,16 +38,17 @@ import Layout from './components/2-Advance-Concept/4-Router/slote-router/compone
     <router-view />
   <Footer /> -->
   <Layout>
+
     <template #header>
       <nav>
         <router-link to="/">Home</router-link> |
         <router-link to="/detail">Detail</router-link>
       </nav>
     </template>
-
     <template #footer>
       <p>&copy; 2025 My App</p>
     </template>
+
   </Layout>
 
 </template>
